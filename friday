@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbcd0bb83de022d2af52fc76dfb7ffe4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bbcd0bb83de022d2af52fc76dfb7ffe4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbcd0bb83de022d2af52fc76dfb7ffe4 = L.map(
+                "map_bbcd0bb83de022d2af52fc76dfb7ffe4",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_677176c385254a2d6291eb80c999c1be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_677176c385254a2d6291eb80c999c1be.addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var marker_53599020f5daffe801bf12a3fde9c3b9 = L.marker(
+                [48.846, 2.3305],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_046812c9421690cd456f35f40f7f2c19 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "blue"}
+            )
+            marker_53599020f5daffe801bf12a3fde9c3b9.setIcon(beautify_icon_046812c9421690cd456f35f40f7f2c19);
+        
+    
+        var popup_f83391778e20949ed6bb5f7102fc04b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6db1d63a7a58b4e74ca8b57516a3ae12 = $(`<div id="html_6db1d63a7a58b4e74ca8b57516a3ae12" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>1. Bread & Roses</b><br>Time: 10:00 - 11:00<br>Next walk: 10 min<br>Enjoy a lovely breakfast with outdoor seating.<br><a href='http://www.breadandroses.fr/' target='_blank'>More info</a></div></div>`)[0];
+                popup_f83391778e20949ed6bb5f7102fc04b7.setContent(html_6db1d63a7a58b4e74ca8b57516a3ae12);
+            
+        
+
+        marker_53599020f5daffe801bf12a3fde9c3b9.bindPopup(popup_f83391778e20949ed6bb5f7102fc04b7)
+        ;
+
+        
+    
+    
+            marker_53599020f5daffe801bf12a3fde9c3b9.bindTooltip(
+                `<div>
+                     1. Bread & Roses
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2fdcdf247f589779541d09da784cc0a1 = L.polyline(
+                [[48.84629, 2.33051], [48.84628, 2.33094], [48.84628, 2.33104], [48.84624, 2.33107], [48.84597, 2.33134], [48.84593, 2.33138], [48.84582, 2.33149], [48.84571, 2.33159], [48.84561, 2.33169], [48.84515, 2.33213], [48.84511, 2.33217], [48.84496, 2.33233], [48.84491, 2.33238], [48.84486, 2.33243], [48.8448, 2.33249], [48.84473, 2.33255], [48.84439, 2.33289], [48.84438, 2.33302], [48.84434, 2.33473], [48.8443, 2.33598], [48.84429, 2.33637], [48.84429, 2.3365], [48.84428, 2.33679], [48.84428, 2.33705]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_2fdcdf247f589779541d09da784cc0a1.bindTooltip(
+                `<div>
+                     From Bread & Roses to Jardin du Luxembourg: Distance: 0.59 km, Duration: 2 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd4dfc604b6f980c9d62dd5e42f14ea7 = L.marker(
+                [48.8462, 2.3371],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_471426501a0ac525388eaed9176bca8b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "blue"}
+            )
+            marker_dd4dfc604b6f980c9d62dd5e42f14ea7.setIcon(beautify_icon_471426501a0ac525388eaed9176bca8b);
+        
+    
+        var popup_62c4cc882b97aca7ba117dc392382d0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2b1cda275654c8313ebe9afec9e771f = $(`<div id="html_d2b1cda275654c8313ebe9afec9e771f" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>2. Jardin du Luxembourg</b><br>Time: 11:10 - 12:00<br>Next walk: 10 min<br>Take a leisurely stroll in this beautiful park and enjoy the fresh morning air. Visit the Luxembourg Palace and fountain.<br><a href='https://www.senat.fr/visite/jardin/index.html' target='_blank'>More info</a></div></div>`)[0];
+                popup_62c4cc882b97aca7ba117dc392382d0e.setContent(html_d2b1cda275654c8313ebe9afec9e771f);
+            
+        
+
+        marker_dd4dfc604b6f980c9d62dd5e42f14ea7.bindPopup(popup_62c4cc882b97aca7ba117dc392382d0e)
+        ;
+
+        
+    
+    
+            marker_dd4dfc604b6f980c9d62dd5e42f14ea7.bindTooltip(
+                `<div>
+                     2. Jardin du Luxembourg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0977a31a322683fe17da5afc93f02feb = L.polyline(
+                [[48.84428, 2.33705], [48.84428, 2.33679], [48.84429, 2.3365], [48.84429, 2.33637], [48.8443, 2.33598], [48.84434, 2.33473], [48.84438, 2.33302], [48.84439, 2.33289], [48.84473, 2.33255], [48.8448, 2.33249], [48.84486, 2.33243], [48.84491, 2.33238], [48.84496, 2.33233], [48.84514, 2.33235], [48.84538, 2.33237], [48.84556, 2.33238], [48.84565, 2.33239], [48.84693, 2.33246], [48.84703, 2.33247], [48.84714, 2.33247], [48.84822, 2.33255], [48.84825, 2.33255], [48.84851, 2.33256], [48.84866, 2.33258], [48.84871, 2.33276], [48.84875, 2.33294], [48.84877, 2.33303], [48.84883, 2.33337], [48.84891, 2.33376], [48.84895, 2.33396], [48.84898, 2.3341], [48.84912, 2.33485], [48.84915, 2.33501], [48.84924, 2.33546], [48.84927, 2.33589], [48.84927, 2.33598], [48.84935, 2.33597], [48.84963, 2.33594], [48.85015, 2.33587], [48.85071, 2.3358], [48.85076, 2.33579], [48.85082, 2.33578], [48.85115, 2.33574], [48.85127, 2.33572], [48.85132, 2.33572], [48.85131, 2.33544], [48.85132, 2.33533], [48.85137, 2.33533], [48.85162, 2.3353], [48.85168, 2.33529], [48.85194, 2.33525], [48.85194, 2.33518], [48.85189, 2.33458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_0977a31a322683fe17da5afc93f02feb.bindTooltip(
+                `<div>
+                     From Jardin du Luxembourg to Saint-Sulpice: Distance: 1.43 km, Duration: 4 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a86b7c99f90efb4d28ef947dd7e26501 = L.marker(
+                [48.8518, 2.3346],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_3b30c608fa5c4b0e7507655186399036 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "blue"}
+            )
+            marker_a86b7c99f90efb4d28ef947dd7e26501.setIcon(beautify_icon_3b30c608fa5c4b0e7507655186399036);
+        
+    
+        var popup_ef3870e0a4cfdd24fbff4c56289fb75d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa3036394ea6635d46c8f9b079213752 = $(`<div id="html_fa3036394ea6635d46c8f9b079213752" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>3. Saint-Sulpice</b><br>Time: 12:10 - 12:30<br>Next walk: 15 min<br>A beautiful church with a stunning interior and rich history.<br><a href='https://en.wikipedia.org/wiki/Saint-Sulpice,_Paris' target='_blank'>More info</a></div></div>`)[0];
+                popup_ef3870e0a4cfdd24fbff4c56289fb75d.setContent(html_fa3036394ea6635d46c8f9b079213752);
+            
+        
+
+        marker_a86b7c99f90efb4d28ef947dd7e26501.bindPopup(popup_ef3870e0a4cfdd24fbff4c56289fb75d)
+        ;
+
+        
+    
+    
+            marker_a86b7c99f90efb4d28ef947dd7e26501.bindTooltip(
+                `<div>
+                     3. Saint-Sulpice
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_155cc8df5f70f9b892e3221859e09ac4 = L.polyline(
+                [[48.85189, 2.33458], [48.85189, 2.33456], [48.85192, 2.33456], [48.85271, 2.33445], [48.85276, 2.33445], [48.85278, 2.33444], [48.85288, 2.33496], [48.85289, 2.33506], [48.85292, 2.33516], [48.853, 2.3355], [48.85303, 2.3356], [48.85307, 2.33573], [48.85313, 2.33582], [48.85317, 2.3359], [48.85299, 2.33663], [48.85292, 2.3369], [48.8529, 2.33699], [48.85288, 2.33711], [48.85277, 2.33754], [48.85273, 2.33774], [48.8527, 2.33783], [48.85252, 2.33855], [48.85251, 2.33863], [48.85248, 2.33875], [48.85243, 2.33895], [48.85236, 2.33926], [48.85221, 2.33987], [48.8522, 2.3399], [48.85219, 2.33995], [48.8521, 2.3403], [48.85183, 2.34144], [48.8517, 2.34196], [48.85168, 2.34203], [48.85146, 2.34292], [48.85144, 2.343], [48.85141, 2.34312], [48.8514, 2.34317], [48.85159, 2.34326], [48.85176, 2.34334], [48.85184, 2.34338], [48.85193, 2.34342], [48.8527, 2.34379], [48.85276, 2.34382], [48.8531, 2.344], [48.85333, 2.34409], [48.85341, 2.34413], [48.85355, 2.3442], [48.85362, 2.34423], [48.85367, 2.34425], [48.85367, 2.34426], [48.85377, 2.34434], [48.85378, 2.34436], [48.85381, 2.34439], [48.85385, 2.34443], [48.85385, 2.34444], [48.85404, 2.34462], [48.85425, 2.34483], [48.85427, 2.34485], [48.85434, 2.34492], [48.85442, 2.345], [48.85525, 2.34582], [48.85527, 2.34584], [48.8553, 2.34586], [48.85533, 2.34589], [48.85536, 2.34592], [48.85547, 2.34601], [48.85557, 2.34609], [48.8556, 2.34611], [48.8558, 2.34624], [48.85609, 2.34643], [48.85612, 2.34645], [48.8562, 2.34648], [48.85625, 2.34634], [48.85645, 2.34574], [48.85649, 2.34564], [48.85657, 2.3454], [48.85669, 2.3449], [48.85687, 2.34393], [48.85692, 2.34354], [48.85692, 2.34348], [48.85692, 2.34336], [48.85693, 2.34325], [48.85713, 2.34164], [48.85714, 2.34152], [48.85715, 2.34147], [48.85715, 2.34142], [48.85715, 2.34139], [48.85714, 2.34136], [48.85696, 2.34119], [48.85693, 2.34116]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_155cc8df5f70f9b892e3221859e09ac4.bindTooltip(
+                `<div>
+                     From Saint-Sulpice to Pont Neuf: Distance: 1.80 km, Duration: 6 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fbcb70dc941b67f454e7a08144490eb = L.marker(
+                [48.857, 2.341],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_e6eef69d72de49b714c559a2877192cb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "blue"}
+            )
+            marker_8fbcb70dc941b67f454e7a08144490eb.setIcon(beautify_icon_e6eef69d72de49b714c559a2877192cb);
+        
+    
+        var popup_5436d6da32dbdf23ba6660cdf185ffe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eea5ae80848e28ef3688e6f2d2767cae = $(`<div id="html_eea5ae80848e28ef3688e6f2d2767cae" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>4. Pont Neuf</b><br>Time: 12:45 - 13:15<br>Next walk: 10 min<br>Walk along the riverbank and see the oldest bridge in Paris.<br><a href='https://en.wikipedia.org/wiki/Pont_Neuf' target='_blank'>More info</a></div></div>`)[0];
+                popup_5436d6da32dbdf23ba6660cdf185ffe8.setContent(html_eea5ae80848e28ef3688e6f2d2767cae);
+            
+        
+
+        marker_8fbcb70dc941b67f454e7a08144490eb.bindPopup(popup_5436d6da32dbdf23ba6660cdf185ffe8)
+        ;
+
+        
+    
+    
+            marker_8fbcb70dc941b67f454e7a08144490eb.bindTooltip(
+                `<div>
+                     4. Pont Neuf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7077b3b991dc58fc3a9f53a3120f89b8 = L.polyline(
+                [[48.85693, 2.34116], [48.85686, 2.34109], [48.85675, 2.34101], [48.85677, 2.34108], [48.85681, 2.34117], [48.85683, 2.34123], [48.85686, 2.34128], [48.85689, 2.34133], [48.85692, 2.34137], [48.857, 2.34143], [48.8571, 2.34151], [48.85714, 2.34152], [48.8572, 2.34152], [48.85732, 2.34152], [48.85776, 2.34188], [48.8583, 2.34232], [48.85833, 2.34234], [48.85838, 2.34238], [48.85848, 2.34246], [48.8584, 2.34279], [48.85838, 2.34284], [48.85829, 2.34317], [48.85824, 2.34337], [48.85823, 2.34341], [48.85796, 2.34438], [48.85772, 2.34531], [48.85769, 2.34542], [48.85763, 2.34562], [48.85762, 2.34565], [48.85759, 2.34576], [48.85757, 2.34583], [48.85745, 2.34628], [48.85736, 2.34665], [48.85735, 2.34669], [48.85734, 2.34672], [48.85729, 2.34693], [48.85726, 2.34705], [48.85724, 2.34712], [48.85719, 2.34729], [48.85711, 2.3476], [48.85709, 2.34764], [48.85698, 2.34805], [48.85693, 2.34822], [48.85692, 2.34824], [48.85687, 2.34842], [48.85678, 2.34873], [48.85677, 2.34877], [48.85672, 2.34893], [48.85658, 2.34934], [48.85656, 2.34938], [48.85652, 2.34949], [48.85621, 2.35031], [48.85614, 2.3505], [48.85613, 2.35053], [48.85611, 2.35057], [48.85607, 2.35071], [48.85591, 2.35078], [48.85587, 2.35079], [48.85582, 2.35081], [48.85514, 2.35032], [48.85513, 2.35031], [48.85507, 2.35026], [48.85499, 2.3502], [48.85438, 2.34975], [48.85435, 2.34985], [48.85429, 2.35004], [48.85426, 2.35009], [48.85415, 2.35028], [48.85377, 2.35084], [48.85375, 2.35086], [48.85373, 2.35087], [48.85371, 2.35089], [48.85365, 2.35092], [48.85361, 2.35089], [48.8532, 2.35059], [48.85317, 2.35057], [48.85315, 2.35056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_7077b3b991dc58fc3a9f53a3120f89b8.bindTooltip(
+                `<div>
+                     From Pont Neuf to Notre Dame: Distance: 1.30 km, Duration: 4 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2913c29dada5435ce79f5a78f1f93110 = L.marker(
+                [48.8529, 2.3499],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_fc479090b2bac9f55d149127bd5804e3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "blue"}
+            )
+            marker_2913c29dada5435ce79f5a78f1f93110.setIcon(beautify_icon_fc479090b2bac9f55d149127bd5804e3);
+        
+    
+        var popup_59eb3e00b9ee724f236cb7b23ad0cdbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2b621a42a1c7bea6b70cedad44b99dd = $(`<div id="html_a2b621a42a1c7bea6b70cedad44b99dd" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>5. Notre Dame</b><br>Time: 13:25 - 14:00<br>Next walk: 10 min<br>Visit the famous Notre Dame Cathedral.<br><a href='https://www.notredamedeparis.fr/en/' target='_blank'>More info</a></div></div>`)[0];
+                popup_59eb3e00b9ee724f236cb7b23ad0cdbc.setContent(html_a2b621a42a1c7bea6b70cedad44b99dd);
+            
+        
+
+        marker_2913c29dada5435ce79f5a78f1f93110.bindPopup(popup_59eb3e00b9ee724f236cb7b23ad0cdbc)
+        ;
+
+        
+    
+    
+            marker_2913c29dada5435ce79f5a78f1f93110.bindTooltip(
+                `<div>
+                     5. Notre Dame
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_56e94b0aea22e0761f1c81b1943746d7 = L.polyline(
+                [[48.85315, 2.35056], [48.85317, 2.35057], [48.8532, 2.35059], [48.85361, 2.35089], [48.85365, 2.35092], [48.8536, 2.351], [48.85352, 2.35112], [48.8535, 2.35115], [48.85347, 2.35118], [48.85344, 2.35121], [48.85342, 2.35124], [48.85329, 2.3513], [48.85327, 2.35131], [48.85325, 2.35131], [48.85323, 2.35131], [48.85321, 2.35131], [48.853, 2.35123], [48.85295, 2.35119], [48.85293, 2.35128], [48.85271, 2.35196], [48.85265, 2.35221], [48.85275, 2.35217], [48.85326, 2.35211], [48.85331, 2.35209], [48.85362, 2.352], [48.85368, 2.35197], [48.85386, 2.35187], [48.85396, 2.35181], [48.85399, 2.35179], [48.85406, 2.35173], [48.85446, 2.35133], [48.85451, 2.35127], [48.85456, 2.35121], [48.85483, 2.35076], [48.85485, 2.35074], [48.85487, 2.35069], [48.85502, 2.35036], [48.85507, 2.35026], [48.85513, 2.35031], [48.85514, 2.35032], [48.85582, 2.35081], [48.85584, 2.35089], [48.85585, 2.35093], [48.85592, 2.35113], [48.85579, 2.35142], [48.8557, 2.35167], [48.85551, 2.35218], [48.85542, 2.35234], [48.85539, 2.35239], [48.85529, 2.35257], [48.85522, 2.35274], [48.85521, 2.35277], [48.85519, 2.35283], [48.85515, 2.35296], [48.85512, 2.35305], [48.85494, 2.35353], [48.85443, 2.3548], [48.85442, 2.35485], [48.85438, 2.35494], [48.85432, 2.35509], [48.85415, 2.35551], [48.85407, 2.35574], [48.85376, 2.3566], [48.85372, 2.35672], [48.85339, 2.35767], [48.85337, 2.35772], [48.85333, 2.35782], [48.85327, 2.35799], [48.85325, 2.35805], [48.85294, 2.3589], [48.85291, 2.35897], [48.85261, 2.35983], [48.85242, 2.36034], [48.85237, 2.36047], [48.85244, 2.36054], [48.85247, 2.36057], [48.85259, 2.36069], [48.85262, 2.36072], [48.85285, 2.36099], [48.85293, 2.36109], [48.85297, 2.36113], [48.85299, 2.36115], [48.85301, 2.36118], [48.85301, 2.36118], [48.85309, 2.36127], [48.85316, 2.36134], [48.85333, 2.36151], [48.85335, 2.36154], [48.85336, 2.36158], [48.85345, 2.36168], [48.85348, 2.36171], [48.8536, 2.36183], [48.85364, 2.36186], [48.85386, 2.36205], [48.85393, 2.3621], [48.85409, 2.36224], [48.85414, 2.36228], [48.85427, 2.36239], [48.85436, 2.36247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_56e94b0aea22e0761f1c81b1943746d7.bindTooltip(
+                `<div>
+                     From Notre Dame to La Favorite Saint-Paul: Distance: 1.73 km, Duration: 5 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_746db85bcad91d6697482a6d8eba0b06 = L.marker(
+                [48.8543, 2.3626],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_c6d830d84fd1ee3de9d24100512cbb9e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "blue"}
+            )
+            marker_746db85bcad91d6697482a6d8eba0b06.setIcon(beautify_icon_c6d830d84fd1ee3de9d24100512cbb9e);
+        
+    
+        var popup_85bfe06c3c0769fa8905cabc393c956b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff77306f0235f8d5906c8329951bee89 = $(`<div id="html_ff77306f0235f8d5906c8329951bee89" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>6. La Favorite Saint-Paul</b><br>Time: 14:10 - 15:30<br>Next walk: 15 min<br>Enjoy a delicious lunch at this café with outdoor seating.<br><a href='https://www.lafavorite-paris.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_85bfe06c3c0769fa8905cabc393c956b.setContent(html_ff77306f0235f8d5906c8329951bee89);
+            
+        
+
+        marker_746db85bcad91d6697482a6d8eba0b06.bindPopup(popup_85bfe06c3c0769fa8905cabc393c956b)
+        ;
+
+        
+    
+    
+            marker_746db85bcad91d6697482a6d8eba0b06.bindTooltip(
+                `<div>
+                     6. La Favorite Saint-Paul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e2ae7f62ea37c7251a1101d7b4ed0c08 = L.polyline(
+                [[48.85436, 2.36247], [48.85457, 2.36267], [48.85461, 2.36272], [48.85467, 2.36277], [48.85471, 2.36268], [48.85478, 2.36251], [48.85481, 2.36245], [48.85487, 2.36231], [48.85488, 2.36227], [48.85495, 2.3621], [48.85501, 2.36191], [48.8551, 2.36168], [48.85516, 2.36173], [48.85519, 2.36174], [48.85545, 2.36195], [48.8555, 2.36199], [48.85555, 2.36207], [48.85558, 2.36209], [48.85571, 2.36218], [48.85586, 2.36226], [48.85591, 2.36228], [48.85599, 2.36233], [48.85679, 2.36276], [48.85681, 2.36278], [48.85684, 2.36279], [48.8569, 2.36284], [48.85687, 2.36292], [48.85649, 2.36421], [48.85646, 2.36429], [48.85643, 2.36441], [48.8564, 2.36448], [48.85635, 2.36481], [48.85631, 2.36497], [48.85619, 2.36569], [48.85618, 2.36575], [48.85617, 2.36583], [48.85605, 2.36656], [48.856, 2.36659], [48.85548, 2.36639], [48.85501, 2.36621], [48.85498, 2.36619], [48.85496, 2.36612], [48.85495, 2.36604], [48.85506, 2.36539], [48.85507, 2.36533], [48.85508, 2.36526], [48.8551, 2.36514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_e2ae7f62ea37c7251a1101d7b4ed0c08.bindTooltip(
+                `<div>
+                     From La Favorite Saint-Paul to Place des Vosges: Distance: 0.85 km, Duration: 2 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f1df329c30bf86b4e77ed0c809ce44f = L.marker(
+                [48.8555, 2.3653],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_0548b29c205f6335f14efcc4b56bfbc7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "blue"}
+            )
+            marker_9f1df329c30bf86b4e77ed0c809ce44f.setIcon(beautify_icon_0548b29c205f6335f14efcc4b56bfbc7);
+        
+    
+        var popup_0814565c01bfc4903cdd12e5385268cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e86be8c4bdd4064a401bfe734ca0a4e = $(`<div id="html_4e86be8c4bdd4064a401bfe734ca0a4e" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>7. Place des Vosges</b><br>Time: 15:45 - 16:30<br>Next walk: 15 min<br>One of the oldest planned squares in Paris with beautiful arcades.<br><a href='https://en.wikipedia.org/wiki/Place_des_Vosges' target='_blank'>More info</a></div></div>`)[0];
+                popup_0814565c01bfc4903cdd12e5385268cb.setContent(html_4e86be8c4bdd4064a401bfe734ca0a4e);
+            
+        
+
+        marker_9f1df329c30bf86b4e77ed0c809ce44f.bindPopup(popup_0814565c01bfc4903cdd12e5385268cb)
+        ;
+
+        
+    
+    
+            marker_9f1df329c30bf86b4e77ed0c809ce44f.bindTooltip(
+                `<div>
+                     7. Place des Vosges
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8b3fe3a0249d35c10a4f56c9bbfd002e = L.polyline(
+                [[48.8551, 2.36514], [48.85519, 2.36462], [48.85521, 2.36456], [48.85524, 2.36452], [48.85527, 2.36451], [48.85529, 2.36452], [48.85576, 2.3647], [48.85627, 2.36491], [48.85631, 2.36497], [48.85619, 2.36569], [48.85618, 2.36575], [48.85617, 2.36583], [48.85605, 2.36656], [48.85604, 2.36673], [48.85596, 2.36725], [48.85595, 2.36731], [48.85594, 2.36737], [48.85578, 2.36832], [48.85583, 2.3685], [48.85578, 2.36851], [48.85571, 2.36853], [48.85538, 2.3686], [48.85495, 2.3687], [48.85482, 2.36873], [48.8546, 2.36878], [48.85446, 2.36882], [48.85444, 2.36882], [48.85433, 2.36885], [48.85425, 2.36887], [48.85416, 2.3689], [48.85402, 2.36895], [48.85378, 2.36903], [48.85355, 2.36906], [48.85355, 2.36898], [48.85353, 2.36891], [48.85351, 2.36885], [48.85349, 2.3688], [48.85346, 2.36875], [48.85343, 2.36871], [48.8534, 2.36868], [48.85333, 2.36864], [48.85325, 2.3686], [48.85316, 2.36856], [48.85311, 2.36854], [48.85309, 2.36853]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_8b3fe3a0249d35c10a4f56c9bbfd002e.bindTooltip(
+                `<div>
+                     From Place des Vosges to Colonne de Juillet: Distance: 0.77 km, Duration: 2 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3165814de4af4e50c8b76f33f7b18b82 = L.marker(
+                [48.853, 2.369],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_eb3943ba15314b2483e02534cd9ae79e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "blue"}
+            )
+            marker_3165814de4af4e50c8b76f33f7b18b82.setIcon(beautify_icon_eb3943ba15314b2483e02534cd9ae79e);
+        
+    
+        var popup_c1843b50ecc169d3cf7825274147f2a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26f00f6d467bb4fafd831ba985adb5c1 = $(`<div id="html_26f00f6d467bb4fafd831ba985adb5c1" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>8. Colonne de Juillet</b><br>Time: 16:45 - 17:00<br>Next walk: 15 min<br>A historic column commemorating the July Revolution.<br><a href='https://en.wikipedia.org/wiki/July_Column' target='_blank'>More info</a></div></div>`)[0];
+                popup_c1843b50ecc169d3cf7825274147f2a3.setContent(html_26f00f6d467bb4fafd831ba985adb5c1);
+            
+        
+
+        marker_3165814de4af4e50c8b76f33f7b18b82.bindPopup(popup_c1843b50ecc169d3cf7825274147f2a3)
+        ;
+
+        
+    
+    
+            marker_3165814de4af4e50c8b76f33f7b18b82.bindTooltip(
+                `<div>
+                     8. Colonne de Juillet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5e1399dc72b83ed73f07cecbb5a98eba = L.polyline(
+                [[48.85309, 2.36853], [48.85311, 2.36854], [48.85316, 2.36856], [48.85325, 2.3686], [48.85333, 2.36864], [48.8534, 2.36868], [48.85343, 2.36871], [48.85346, 2.36875], [48.85349, 2.3688], [48.85351, 2.36885], [48.85353, 2.36891], [48.85355, 2.36898], [48.85355, 2.36906], [48.85356, 2.36914], [48.85355, 2.36923], [48.85354, 2.3693], [48.85353, 2.3694], [48.85352, 2.36944], [48.85349, 2.3695], [48.85347, 2.36956], [48.85342, 2.36963], [48.85337, 2.36968], [48.8533, 2.36972], [48.8533, 2.37004], [48.8533, 2.37016], [48.85322, 2.37023], [48.85312, 2.37032], [48.85265, 2.37075], [48.8514, 2.37221], [48.85133, 2.3723], [48.85132, 2.37231], [48.85077, 2.37294], [48.85062, 2.37312], [48.85056, 2.37318], [48.85048, 2.37328], [48.85013, 2.37368], [48.85006, 2.37376], [48.85002, 2.37381], [48.8497, 2.37419], [48.84961, 2.37429], [48.84955, 2.37418], [48.84883, 2.37289], [48.8488, 2.37285], [48.84874, 2.37273], [48.84872, 2.37269], [48.84866, 2.3726], [48.84863, 2.37254], [48.84859, 2.37246], [48.84856, 2.37241], [48.84808, 2.37159], [48.848, 2.37145], [48.84788, 2.37124], [48.8469, 2.36951], [48.84685, 2.36941], [48.84681, 2.36946], [48.84677, 2.36951], [48.84653, 2.36984], [48.84657, 2.3699], [48.84696, 2.37055]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_5e1399dc72b83ed73f07cecbb5a98eba.bindTooltip(
+                `<div>
+                     From Colonne de Juillet to Rue Crémieux Houses: Distance: 1.27 km, Duration: 4 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54a1155ae3ca3973965938c9c7aaf705 = L.marker(
+                [48.847, 2.3705],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_5be49ce4e9be5ae4ab34b5343afffe68 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "blue"}
+            )
+            marker_54a1155ae3ca3973965938c9c7aaf705.setIcon(beautify_icon_5be49ce4e9be5ae4ab34b5343afffe68);
+        
+    
+        var popup_ecf600ce053b14005ffd8f377c1f3715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5bf903c8f0fac23da975ab690b7d2bd = $(`<div id="html_a5bf903c8f0fac23da975ab690b7d2bd" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>9. Rue Crémieux Houses</b><br>Time: 17:15 - 17:45<br>Next walk: 15 min<br>A picturesque street with colorful houses, perfect for photos.<br><a href='https://www.parisdigest.com/photo/rue-cremieux.htm' target='_blank'>More info</a></div></div>`)[0];
+                popup_ecf600ce053b14005ffd8f377c1f3715.setContent(html_a5bf903c8f0fac23da975ab690b7d2bd);
+            
+        
+
+        marker_54a1155ae3ca3973965938c9c7aaf705.bindPopup(popup_ecf600ce053b14005ffd8f377c1f3715)
+        ;
+
+        
+    
+    
+            marker_54a1155ae3ca3973965938c9c7aaf705.bindTooltip(
+                `<div>
+                     9. Rue Crémieux Houses
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_aa7fb4ee7b3761689e35eaf35e065091 = L.polyline(
+                [[48.84696, 2.37055], [48.84754, 2.3715], [48.8476, 2.37159], [48.84739, 2.37168], [48.84738, 2.37168], [48.84677, 2.37196], [48.84675, 2.37197], [48.84677, 2.37206], [48.84679, 2.37213], [48.84681, 2.3722], [48.84684, 2.37226], [48.84688, 2.37231], [48.84691, 2.37235], [48.84694, 2.37241], [48.84719, 2.37277], [48.84741, 2.37308], [48.84746, 2.37314], [48.84756, 2.37328], [48.84779, 2.3736], [48.84782, 2.37365], [48.84783, 2.37371], [48.84782, 2.37385], [48.84787, 2.3739], [48.8479, 2.37393], [48.84794, 2.37397], [48.84801, 2.37382], [48.84806, 2.37373], [48.84856, 2.37269], [48.84863, 2.37254], [48.84887, 2.37204], [48.8489, 2.37198], [48.84914, 2.37149], [48.84917, 2.37143], [48.84923, 2.37133], [48.84931, 2.37121], [48.84936, 2.37115], [48.84937, 2.37113], [48.8494, 2.37109], [48.8495, 2.37094], [48.84978, 2.37065], [48.85095, 2.37011], [48.85144, 2.36989], [48.85164, 2.36979], [48.85182, 2.36971], [48.85186, 2.36969], [48.85188, 2.36968], [48.85217, 2.36955], [48.85234, 2.36948], [48.85237, 2.36947], [48.85242, 2.36945], [48.85248, 2.36943], [48.85255, 2.36942], [48.85267, 2.36946], [48.85275, 2.3695], [48.85315, 2.3697], [48.85318, 2.36971], [48.85322, 2.36972], [48.85327, 2.36972], [48.8533, 2.36972], [48.85337, 2.36968], [48.85342, 2.36963], [48.85347, 2.36956], [48.85349, 2.3695], [48.85352, 2.36944], [48.85353, 2.3694], [48.85354, 2.3693], [48.85355, 2.36923], [48.85356, 2.36914], [48.85355, 2.36906], [48.85378, 2.36903], [48.85402, 2.36895], [48.85416, 2.3689], [48.85425, 2.36887], [48.85433, 2.36885], [48.85444, 2.36882], [48.85446, 2.36882], [48.8546, 2.36878], [48.85482, 2.36873], [48.85495, 2.3687], [48.85538, 2.3686], [48.85571, 2.36853], [48.85578, 2.36851], [48.85583, 2.3685], [48.85594, 2.36847], [48.85603, 2.36844], [48.85616, 2.36841], [48.85645, 2.36834], [48.85661, 2.3683], [48.85689, 2.36824], [48.85694, 2.36822], [48.85701, 2.36821], [48.85714, 2.36818], [48.85723, 2.36816], [48.85738, 2.36812], [48.85759, 2.36807], [48.85766, 2.36805], [48.85772, 2.36803], [48.85784, 2.368], [48.85792, 2.36798], [48.85846, 2.36786], [48.85856, 2.36784], [48.85862, 2.36782], [48.85878, 2.36778], [48.85883, 2.36777], [48.85925, 2.36767], [48.85939, 2.36763], [48.85949, 2.36761], [48.85977, 2.36754], [48.85987, 2.36752], [48.85989, 2.36751], [48.86004, 2.36748], [48.8601, 2.36747], [48.86025, 2.36743], [48.86056, 2.36736], [48.86065, 2.36733], [48.86082, 2.3673], [48.86096, 2.36726], [48.86108, 2.36723], [48.86136, 2.36717], [48.86154, 2.36712], [48.86157, 2.36711], [48.86162, 2.3671], [48.86183, 2.36705], [48.86201, 2.367], [48.86203, 2.367], [48.86209, 2.36698], [48.86219, 2.36696], [48.86235, 2.36692], [48.86238, 2.36691], [48.86246, 2.36689], [48.86294, 2.36678], [48.8631, 2.36674], [48.86323, 2.36667], [48.86325, 2.36665], [48.86331, 2.36662], [48.86354, 2.36649], [48.86372, 2.36637], [48.86379, 2.36634], [48.86388, 2.36628], [48.86429, 2.36603], [48.86442, 2.36595], [48.86447, 2.36592], [48.86449, 2.36591], [48.86467, 2.3658], [48.86479, 2.36573], [48.86491, 2.36566], [48.86492, 2.36565], [48.86526, 2.36544], [48.86537, 2.36538], [48.8655, 2.36529], [48.86587, 2.36506], [48.86598, 2.36499], [48.86612, 2.36491], [48.86631, 2.3648], [48.86637, 2.36478], [48.86637, 2.36477], [48.8664, 2.36477], [48.86653, 2.36481], [48.8666, 2.36469], [48.86677, 2.36435], [48.86712, 2.36374], [48.86713, 2.36371], [48.86731, 2.36343], [48.86738, 2.36332], [48.86731, 2.36314], [48.86728, 2.36309], [48.8672, 2.36286], [48.86687, 2.36203], [48.86683, 2.36192], [48.86674, 2.36161], [48.86672, 2.36155], [48.86665, 2.36128], [48.8666, 2.36108], [48.86645, 2.36044], [48.86644, 2.36038], [48.86642, 2.36031], [48.8664, 2.36022], [48.86631, 2.35981], [48.86595, 2.35826], [48.86592, 2.35809], [48.86585, 2.35779], [48.86583, 2.3577], [48.86579, 2.35754], [48.86578, 2.3575], [48.86568, 2.35707], [48.86564, 2.35689], [48.86571, 2.35686], [48.86576, 2.35683], [48.86578, 2.35677], [48.86588, 2.35642], [48.86592, 2.35645], [48.86593, 2.35646], [48.86594, 2.35646], [48.86612, 2.35658], [48.8662, 2.35663], [48.86623, 2.35656], [48.86649, 2.35673]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_aa7fb4ee7b3761689e35eaf35e065091.bindTooltip(
+                `<div>
+                     From Rue Crémieux Houses to Passage de l'Ancre: Distance: 3.46 km, Duration: 10 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11f5e636f0212a33c47b50cb5cfb825a = L.marker(
+                [48.8665, 2.3567],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_c2e9ced9e82b129e4625009dff7fdea4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "blue"}
+            )
+            marker_11f5e636f0212a33c47b50cb5cfb825a.setIcon(beautify_icon_c2e9ced9e82b129e4625009dff7fdea4);
+        
+    
+        var popup_37dfe0cd8bd2bd6f782c3ba03a77f980 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6118d7ab41324c7ce4f2b18915183372 = $(`<div id="html_6118d7ab41324c7ce4f2b18915183372" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>10. Passage de l'Ancre</b><br>Time: 18:00 - 18:30<br>Next walk: 30 min<br>A hidden gem with quaint shops and a charming atmosphere.<br><a href='https://en.wikipedia.org/wiki/Passage_de_l%27Ancre' target='_blank'>More info</a></div></div>`)[0];
+                popup_37dfe0cd8bd2bd6f782c3ba03a77f980.setContent(html_6118d7ab41324c7ce4f2b18915183372);
+            
+        
+
+        marker_11f5e636f0212a33c47b50cb5cfb825a.bindPopup(popup_37dfe0cd8bd2bd6f782c3ba03a77f980)
+        ;
+
+        
+    
+    
+            marker_11f5e636f0212a33c47b50cb5cfb825a.bindTooltip(
+                `<div>
+                     10. Passage de l'Ancre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_803e0204e1c12dff12dccc2cff56b16f = L.polyline(
+                [[48.86649, 2.35673], [48.86623, 2.35656], [48.8662, 2.35663], [48.86612, 2.35658], [48.86594, 2.35646], [48.86593, 2.35646], [48.86592, 2.35645], [48.86588, 2.35642], [48.86578, 2.35677], [48.86576, 2.35683], [48.86571, 2.35686], [48.86564, 2.35689], [48.86562, 2.35678], [48.86554, 2.35647], [48.86553, 2.35643], [48.86553, 2.3564], [48.86546, 2.35611], [48.8654, 2.35583], [48.86536, 2.35568], [48.86534, 2.35568], [48.86526, 2.35568], [48.86522, 2.35566], [48.8652, 2.35565], [48.86517, 2.35563], [48.86486, 2.35546], [48.86481, 2.35543], [48.86473, 2.35539], [48.86433, 2.35517], [48.86428, 2.35514], [48.86422, 2.35511], [48.86382, 2.35489], [48.86377, 2.35486], [48.86371, 2.35483], [48.86327, 2.35459], [48.86322, 2.35456], [48.86321, 2.3546], [48.86319, 2.35468], [48.86272, 2.35638], [48.86252, 2.35701], [48.86241, 2.35738], [48.86239, 2.35743], [48.86243, 2.35748], [48.8626, 2.35765], [48.86287, 2.35786], [48.86288, 2.35781], [48.86313, 2.35702]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_803e0204e1c12dff12dccc2cff56b16f.bindTooltip(
+                `<div>
+                     From Passage de l'Ancre to Derrière: Distance: 0.83 km, Duration: 3 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_812c84ce85d404c882db5c33abced572 = L.marker(
+                [48.8631, 2.357],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_c3d95fef8a5bf7b697d6f5dde23841db = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "blue"}
+            )
+            marker_812c84ce85d404c882db5c33abced572.setIcon(beautify_icon_c3d95fef8a5bf7b697d6f5dde23841db);
+        
+    
+        var popup_b0799804fb5d931cde53380464e178ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81ef862297693e442ba038768fe1df63 = $(`<div id="html_81ef862297693e442ba038768fe1df63" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>11. Derrière</b><br>Time: 19:30 - 21:30<br>Next walk: 10 min<br>Enjoy dinner at this unique restaurant.<br><a href='https://www.derriere-resto.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_b0799804fb5d931cde53380464e178ab.setContent(html_81ef862297693e442ba038768fe1df63);
+            
+        
+
+        marker_812c84ce85d404c882db5c33abced572.bindPopup(popup_b0799804fb5d931cde53380464e178ab)
+        ;
+
+        
+    
+    
+            marker_812c84ce85d404c882db5c33abced572.bindTooltip(
+                `<div>
+                     11. Derrière
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_79ee06a069c678d07e5623fa6af5a22a = L.polyline(
+                [[48.86313, 2.35702], [48.86323, 2.35671], [48.86331, 2.35641], [48.86374, 2.35496], [48.86375, 2.3549], [48.86377, 2.35486], [48.86371, 2.35483], [48.86327, 2.35459], [48.86322, 2.35456], [48.86316, 2.35453], [48.86289, 2.35437], [48.86288, 2.35437], [48.86279, 2.35432], [48.86272, 2.35428], [48.86265, 2.35424], [48.86267, 2.35413], [48.8627, 2.35404], [48.86277, 2.35372], [48.86277, 2.3537], [48.86284, 2.35341], [48.86285, 2.35335], [48.86289, 2.35316], [48.86303, 2.35256], [48.86304, 2.35252], [48.86306, 2.35241], [48.86309, 2.3523], [48.8631, 2.35226], [48.86324, 2.35165], [48.86326, 2.35157], [48.86336, 2.35114], [48.86337, 2.35111], [48.8634, 2.35097], [48.86353, 2.35104], [48.86354, 2.35104], [48.86395, 2.35128], [48.86405, 2.35133], [48.86409, 2.35135], [48.86415, 2.35139], [48.86429, 2.35145], [48.86433, 2.35148], [48.86438, 2.35151], [48.86442, 2.35153], [48.86439, 2.3514], [48.86438, 2.35133], [48.86431, 2.35104], [48.86427, 2.35087], [48.86421, 2.35058], [48.86412, 2.35018], [48.86411, 2.35011], [48.86409, 2.35002], [48.86393, 2.3493], [48.86391, 2.34925], [48.86387, 2.34903], [48.86385, 2.34886], [48.86384, 2.34881], [48.86381, 2.34866], [48.86373, 2.34828], [48.86373, 2.34828], [48.86371, 2.34822], [48.8637, 2.3482], [48.86365, 2.34813], [48.86364, 2.34812], [48.86356, 2.34801], [48.86344, 2.34785], [48.86331, 2.34774], [48.86323, 2.34771], [48.86318, 2.34771], [48.86313, 2.34772], [48.86306, 2.34775], [48.86302, 2.3478], [48.86298, 2.34789], [48.86293, 2.34809], [48.86289, 2.34828], [48.86285, 2.34839], [48.86281, 2.34849], [48.86279, 2.34851], [48.86276, 2.34852], [48.86272, 2.34854], [48.86267, 2.34855], [48.86261, 2.34854], [48.86251, 2.3485], [48.86151, 2.34798], [48.86123, 2.34782], [48.86075, 2.34757], [48.86068, 2.34748], [48.86065, 2.34736], [48.86065, 2.34723], [48.8607, 2.34678], [48.86082, 2.34642], [48.86095, 2.34611], [48.86123, 2.34548], [48.86129, 2.34539], [48.86139, 2.34527], [48.86147, 2.34516], [48.86152, 2.34511], [48.8616, 2.34503], [48.86165, 2.34495], [48.86173, 2.34482], [48.8618, 2.34468], [48.86181, 2.34465], [48.86189, 2.34449], [48.86195, 2.34439], [48.86199, 2.34432], [48.86207, 2.34422], [48.8622, 2.34415], [48.86234, 2.34411], [48.86249, 2.34411], [48.86249, 2.34411], [48.86262, 2.34414], [48.8627, 2.34419], [48.86281, 2.34426], [48.86295, 2.34441], [48.86303, 2.34469], [48.86306, 2.34488], [48.86306, 2.34581], [48.86307, 2.34654], [48.86305, 2.34668], [48.86301, 2.34691], [48.86298, 2.34713], [48.86297, 2.34716], [48.86295, 2.34734], [48.86293, 2.3475], [48.86293, 2.34761], [48.86293, 2.34775], [48.86293, 2.34779], [48.86295, 2.34783], [48.86297, 2.34787], [48.863, 2.34789], [48.86303, 2.34791], [48.86307, 2.34793], [48.86331, 2.34806]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            poly_line_79ee06a069c678d07e5623fa6af5a22a.bindTooltip(
+                `<div>
+                     From Derrière to L'Épicier: Distance: 2.04 km, Duration: 6 min
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_943f9ffb0d5f2b613599376dd60c019e = L.marker(
+                [48.8633, 2.3481],
+                {}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+            var beautify_icon_56dabac5d7f530ef0590e974bfab4c05 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 12, "textColor": "blue"}
+            )
+            marker_943f9ffb0d5f2b613599376dd60c019e.setIcon(beautify_icon_56dabac5d7f530ef0590e974bfab4c05);
+        
+    
+        var popup_1c40783b4f1cafcfe964b2fe339f11bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f35d4d3961fbde067c6e0b5fae57c94 = $(`<div id="html_8f35d4d3961fbde067c6e0b5fae57c94" style="width: 100.0%; height: 100.0%;"><div style='width: 250px;'><b>12. L'Épicier</b><br>Time: 21:45 - 23:00<br>Next walk: <br>End the evening with a drink at this trendy bar.<br><a href='https://lepicier.paris' target='_blank'>More info</a></div></div>`)[0];
+                popup_1c40783b4f1cafcfe964b2fe339f11bb.setContent(html_8f35d4d3961fbde067c6e0b5fae57c94);
+            
+        
+
+        marker_943f9ffb0d5f2b613599376dd60c019e.bindPopup(popup_1c40783b4f1cafcfe964b2fe339f11bb)
+        ;
+
+        
+    
+    
+            marker_943f9ffb0d5f2b613599376dd60c019e.bindTooltip(
+                `<div>
+                     12. L'Épicier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_18d4282dcc0c1af65fce7c063eed24cd = L.circleMarker(
+                [48.8583, 2.3375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_8cf2b9ed973da8fd24c85ca9cd8d10ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35b489387536d19059c1446337673b80 = $(`<div id="html_35b489387536d19059c1446337673b80" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Pont des Arts</b><br>A famous pedestrian bridge known for its love locks and scenic views.<br><a href='https://www.parisdigest.com/monument/pont-des-arts.htm' target='_blank'>More info</a></div></div>`)[0];
+                popup_8cf2b9ed973da8fd24c85ca9cd8d10ac.setContent(html_35b489387536d19059c1446337673b80);
+            
+        
+
+        circle_marker_18d4282dcc0c1af65fce7c063eed24cd.bindPopup(popup_8cf2b9ed973da8fd24c85ca9cd8d10ac)
+        ;
+
+        
+    
+    
+            circle_marker_18d4282dcc0c1af65fce7c063eed24cd.bindTooltip(
+                `<div>
+                     Pont des Arts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4343ff9a33cd19e037f3c29fb11ab44e = L.circleMarker(
+                [48.8606, 2.3376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_bb7e175a13ade909ed06269afba20564 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0923e916690771c99cad1af8376e21fb = $(`<div id="html_0923e916690771c99cad1af8376e21fb" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Louvre Museum</b><br>One of the world's largest and most visited museums, home to the Mona Lisa.<br><a href='https://www.louvre.fr/en' target='_blank'>More info</a></div></div>`)[0];
+                popup_bb7e175a13ade909ed06269afba20564.setContent(html_0923e916690771c99cad1af8376e21fb);
+            
+        
+
+        circle_marker_4343ff9a33cd19e037f3c29fb11ab44e.bindPopup(popup_bb7e175a13ade909ed06269afba20564)
+        ;
+
+        
+    
+    
+            circle_marker_4343ff9a33cd19e037f3c29fb11ab44e.bindTooltip(
+                `<div>
+                     Louvre Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e84ae5ededd1785b7bf1ffeb03600a17 = L.circleMarker(
+                [48.8674, 2.3285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_b779f51c763da4babf48a678c5722d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32dfd67849b3d25a4620a7f30448d837 = $(`<div id="html_32dfd67849b3d25a4620a7f30448d837" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Place Vendôme</b><br>An elegant square known for its upscale shops and the Vendôme Column.<br><a href='https://www.paris.fr/pages/place-vendome-2192' target='_blank'>More info</a></div></div>`)[0];
+                popup_b779f51c763da4babf48a678c5722d49.setContent(html_32dfd67849b3d25a4620a7f30448d837);
+            
+        
+
+        circle_marker_e84ae5ededd1785b7bf1ffeb03600a17.bindPopup(popup_b779f51c763da4babf48a678c5722d49)
+        ;
+
+        
+    
+    
+            circle_marker_e84ae5ededd1785b7bf1ffeb03600a17.bindTooltip(
+                `<div>
+                     Place Vendôme
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db44cb93e229222329346b7a1b66765a = L.circleMarker(
+                [48.8665, 2.3125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_b834a79e56eedba2a59590148803fb58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67b5cff6e4bacd5b81f6ed62d27bd955 = $(`<div id="html_67b5cff6e4bacd5b81f6ed62d27bd955" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Grand Palais</b><br>A historic site, exhibition hall, and museum complex.<br><a href='https://www.grandpalais.fr/en' target='_blank'>More info</a></div></div>`)[0];
+                popup_b834a79e56eedba2a59590148803fb58.setContent(html_67b5cff6e4bacd5b81f6ed62d27bd955);
+            
+        
+
+        circle_marker_db44cb93e229222329346b7a1b66765a.bindPopup(popup_b834a79e56eedba2a59590148803fb58)
+        ;
+
+        
+    
+    
+            circle_marker_db44cb93e229222329346b7a1b66765a.bindTooltip(
+                `<div>
+                     Grand Palais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6caad321b700066841eed0ba87e7318d = L.circleMarker(
+                [48.86, 2.3266],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_f9f65b753f5616e0b15d121002b00b50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_688120dd799b7adc7e0661c3f296a592 = $(`<div id="html_688120dd799b7adc7e0661c3f296a592" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Musée d'Orsay</b><br>A museum housed in a former railway station, featuring Impressionist masterpieces.<br><a href='https://www.musee-orsay.fr/en' target='_blank'>More info</a></div></div>`)[0];
+                popup_f9f65b753f5616e0b15d121002b00b50.setContent(html_688120dd799b7adc7e0661c3f296a592);
+            
+        
+
+        circle_marker_6caad321b700066841eed0ba87e7318d.bindPopup(popup_f9f65b753f5616e0b15d121002b00b50)
+        ;
+
+        
+    
+    
+            circle_marker_6caad321b700066841eed0ba87e7318d.bindTooltip(
+                `<div>
+                     Musée d'Orsay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_854dc2152dbb4c25cdaa41d25cf8ee10 = L.circleMarker(
+                [48.8566, 2.2986],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_0ce159de8d1c9b6a61a5b2e4fce38ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a6544c97c031a73b4e3e2f75fffdf3 = $(`<div id="html_90a6544c97c031a73b4e3e2f75fffdf3" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Champ de Mars</b><br>A large public greenspace located between the Eiffel Tower and the École Militaire.<br><a href='https://www.parisinfo.com/transport/73102/Champ-de-Mars' target='_blank'>More info</a></div></div>`)[0];
+                popup_0ce159de8d1c9b6a61a5b2e4fce38ba0.setContent(html_90a6544c97c031a73b4e3e2f75fffdf3);
+            
+        
+
+        circle_marker_854dc2152dbb4c25cdaa41d25cf8ee10.bindPopup(popup_0ce159de8d1c9b6a61a5b2e4fce38ba0)
+        ;
+
+        
+    
+    
+            circle_marker_854dc2152dbb4c25cdaa41d25cf8ee10.bindTooltip(
+                `<div>
+                     Champ de Mars
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7599d64c828241cf75b7c36cb81265f = L.circleMarker(
+                [48.847, 2.3705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_d202e305b20d523e12ffc1561f9308e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c85e252f68678e1c95bd6700c477e7d6 = $(`<div id="html_c85e252f68678e1c95bd6700c477e7d6" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Rue Crémieux</b><br>A picturesque street with colorful houses, perfect for photos.<br><a href='https://www.parisdigest.com/photo/rue-cremieux.htm' target='_blank'>More info</a></div></div>`)[0];
+                popup_d202e305b20d523e12ffc1561f9308e0.setContent(html_c85e252f68678e1c95bd6700c477e7d6);
+            
+        
+
+        circle_marker_b7599d64c828241cf75b7c36cb81265f.bindPopup(popup_d202e305b20d523e12ffc1561f9308e0)
+        ;
+
+        
+    
+    
+            circle_marker_b7599d64c828241cf75b7c36cb81265f.bindTooltip(
+                `<div>
+                     Rue Crémieux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99404d244c58ab310feb5eb1a044e67a = L.circleMarker(
+                [48.852, 2.3461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_c14eebdd1cbcc7656f9f868b2dbf29ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b47cbabbc1b934bb05a308ec7eb7969 = $(`<div id="html_9b47cbabbc1b934bb05a308ec7eb7969" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Square René Viviani</b><br>A small park with a view of Notre-Dame Cathedral, ideal for photos.<br><a href='https://en.wikipedia.org/wiki/Square_Ren%C3%A9-Viviani' target='_blank'>More info</a></div></div>`)[0];
+                popup_c14eebdd1cbcc7656f9f868b2dbf29ee.setContent(html_9b47cbabbc1b934bb05a308ec7eb7969);
+            
+        
+
+        circle_marker_99404d244c58ab310feb5eb1a044e67a.bindPopup(popup_c14eebdd1cbcc7656f9f868b2dbf29ee)
+        ;
+
+        
+    
+    
+            circle_marker_99404d244c58ab310feb5eb1a044e67a.bindTooltip(
+                `<div>
+                     Square René Viviani
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a12333f8c025ca9dd3291466871ea44a = L.circleMarker(
+                [48.8665, 2.3567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_68abb2564baa2179a6c44633b1cb60ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d618a9568ab65564b05f4e4995ea78e2 = $(`<div id="html_d618a9568ab65564b05f4e4995ea78e2" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Passage de l'Ancre</b><br>A hidden gem with quaint shops and a charming atmosphere.<br><a href='https://en.wikipedia.org/wiki/Passage_de_l%27Ancre' target='_blank'>More info</a></div></div>`)[0];
+                popup_68abb2564baa2179a6c44633b1cb60ae.setContent(html_d618a9568ab65564b05f4e4995ea78e2);
+            
+        
+
+        circle_marker_a12333f8c025ca9dd3291466871ea44a.bindPopup(popup_68abb2564baa2179a6c44633b1cb60ae)
+        ;
+
+        
+    
+    
+            circle_marker_a12333f8c025ca9dd3291466871ea44a.bindTooltip(
+                `<div>
+                     Passage de l'Ancre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_134b29faba10a59efdd219c85ef9a77c = L.circleMarker(
+                [48.8853, 2.337],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_4c1ccf9ffd21c0ad401de424c07a986f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e710d7949fe68a03c5f06de5e257429 = $(`<div id="html_5e710d7949fe68a03c5f06de5e257429" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Le Mur des Je t'aime</b><br>A wall with 'I love you' written in multiple languages.<br><a href='https://en.wikipedia.org/wiki/Le_Mur_des_Je_t%27aime' target='_blank'>More info</a></div></div>`)[0];
+                popup_4c1ccf9ffd21c0ad401de424c07a986f.setContent(html_5e710d7949fe68a03c5f06de5e257429);
+            
+        
+
+        circle_marker_134b29faba10a59efdd219c85ef9a77c.bindPopup(popup_4c1ccf9ffd21c0ad401de424c07a986f)
+        ;
+
+        
+    
+    
+            circle_marker_134b29faba10a59efdd219c85ef9a77c.bindTooltip(
+                `<div>
+                     Le Mur des Je t'aime
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_725b270112dde166c16459de7990efbf = L.circleMarker(
+                [48.8564, 2.3404],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_24369604e8eff76ea5237f73f3673454 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c39ca0ecc87a070dbaf7e5eb50f2d2a = $(`<div id="html_2c39ca0ecc87a070dbaf7e5eb50f2d2a" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Square du Vert-Galant</b><br>A peaceful spot on Île de la Cité with beautiful views.<br><a href='https://en.wikipedia.org/wiki/Square_du_Vert-Galant' target='_blank'>More info</a></div></div>`)[0];
+                popup_24369604e8eff76ea5237f73f3673454.setContent(html_2c39ca0ecc87a070dbaf7e5eb50f2d2a);
+            
+        
+
+        circle_marker_725b270112dde166c16459de7990efbf.bindPopup(popup_24369604e8eff76ea5237f73f3673454)
+        ;
+
+        
+    
+    
+            circle_marker_725b270112dde166c16459de7990efbf.bindTooltip(
+                `<div>
+                     Square du Vert-Galant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8342646d43ef9db00f5f14a8b87d178 = L.circleMarker(
+                [48.8862, 2.3386],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_95e3a45d824c20e5496857daecdde1f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_541d33b6610289142e52cf98ebdb1f98 = $(`<div id="html_541d33b6610289142e52cf98ebdb1f98" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Montmartre Vineyards</b><br>A hidden vineyard in Montmartre offering a unique photo opportunity.<br><a href='https://en.wikipedia.org/wiki/Montmartre_vineyard' target='_blank'>More info</a></div></div>`)[0];
+                popup_95e3a45d824c20e5496857daecdde1f0.setContent(html_541d33b6610289142e52cf98ebdb1f98);
+            
+        
+
+        circle_marker_c8342646d43ef9db00f5f14a8b87d178.bindPopup(popup_95e3a45d824c20e5496857daecdde1f0)
+        ;
+
+        
+    
+    
+            circle_marker_c8342646d43ef9db00f5f14a8b87d178.bindTooltip(
+                `<div>
+                     Montmartre Vineyards
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b530265be6ff3f01dd3854b3e6dcbce = L.circleMarker(
+                [48.8741, 2.343],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_22e257a243480ed3776f4aed47a4be72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e82c369e546c28cd5ee4552ce038041d = $(`<div id="html_e82c369e546c28cd5ee4552ce038041d" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Passage Verdeau</b><br>A lesser-known covered passage with beautiful architecture.<br><a href='https://en.wikipedia.org/wiki/Passage_Verdeau' target='_blank'>More info</a></div></div>`)[0];
+                popup_22e257a243480ed3776f4aed47a4be72.setContent(html_e82c369e546c28cd5ee4552ce038041d);
+            
+        
+
+        circle_marker_1b530265be6ff3f01dd3854b3e6dcbce.bindPopup(popup_22e257a243480ed3776f4aed47a4be72)
+        ;
+
+        
+    
+    
+            circle_marker_1b530265be6ff3f01dd3854b3e6dcbce.bindTooltip(
+                `<div>
+                     Passage Verdeau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1611098eedd5f0273d25c144fa4a59ae = L.circleMarker(
+                [48.8606, 2.3376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_2a39db513af9805ef503b3152c43cc76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3aac85ed028bfee678a16dc78392b9 = $(`<div id="html_ee3aac85ed028bfee678a16dc78392b9" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Louvre Pyramid</b><br>Iconic Louvre Pyramid<br><a href='https://www.louvre.fr/en' target='_blank'>More info</a></div></div>`)[0];
+                popup_2a39db513af9805ef503b3152c43cc76.setContent(html_ee3aac85ed028bfee678a16dc78392b9);
+            
+        
+
+        circle_marker_1611098eedd5f0273d25c144fa4a59ae.bindPopup(popup_2a39db513af9805ef503b3152c43cc76)
+        ;
+
+        
+    
+    
+            circle_marker_1611098eedd5f0273d25c144fa4a59ae.bindTooltip(
+                `<div>
+                     Louvre Pyramid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80e27b28c06a7d4040f82157f1b04a21 = L.circleMarker(
+                [48.852, 2.3461],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_f0125d2ba70c815d8441fcd13bec156e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8a42a655ec69071a70304beb1d75fd4 = $(`<div id="html_a8a42a655ec69071a70304beb1d75fd4" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Square René Viviani View</b><br>Perfect spot for Notre-Dame Cathedral background<br><a href='https://en.wikipedia.org/wiki/Square_Ren%C3%A9-Viviani' target='_blank'>More info</a></div></div>`)[0];
+                popup_f0125d2ba70c815d8441fcd13bec156e.setContent(html_a8a42a655ec69071a70304beb1d75fd4);
+            
+        
+
+        circle_marker_80e27b28c06a7d4040f82157f1b04a21.bindPopup(popup_f0125d2ba70c815d8441fcd13bec156e)
+        ;
+
+        
+    
+    
+            circle_marker_80e27b28c06a7d4040f82157f1b04a21.bindTooltip(
+                `<div>
+                     Square René Viviani View
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb59148275b82e9678a5be76604ca44c = L.circleMarker(
+                [48.847, 2.3705],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_1f3a3d0d0dea223fb83fe3a73fc154b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89c3071f374ded5b06265afdbaeec3e7 = $(`<div id="html_89c3071f374ded5b06265afdbaeec3e7" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Rue Crémieux Houses</b><br>Colorful houses in Rue Crémieux<br><a href='https://www.parisdigest.com/photo/rue-cremieux.htm' target='_blank'>More info</a></div></div>`)[0];
+                popup_1f3a3d0d0dea223fb83fe3a73fc154b7.setContent(html_89c3071f374ded5b06265afdbaeec3e7);
+            
+        
+
+        circle_marker_cb59148275b82e9678a5be76604ca44c.bindPopup(popup_1f3a3d0d0dea223fb83fe3a73fc154b7)
+        ;
+
+        
+    
+    
+            circle_marker_cb59148275b82e9678a5be76604ca44c.bindTooltip(
+                `<div>
+                     Rue Crémieux Houses
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00b479ab5ed0226e72eebb2ae757ee5a = L.circleMarker(
+                [48.8862, 2.3386],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_3b014d9534650e2a9b1d947382811b6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf2e68a95723bae9aa8af847d2b082f = $(`<div id="html_dcf2e68a95723bae9aa8af847d2b082f" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Montmartre View</b><br>Scenic Montmartre Vineyards<br><a href='https://en.wikipedia.org/wiki/Montmartre_vineyard' target='_blank'>More info</a></div></div>`)[0];
+                popup_3b014d9534650e2a9b1d947382811b6a.setContent(html_dcf2e68a95723bae9aa8af847d2b082f);
+            
+        
+
+        circle_marker_00b479ab5ed0226e72eebb2ae757ee5a.bindPopup(popup_3b014d9534650e2a9b1d947382811b6a)
+        ;
+
+        
+    
+    
+            circle_marker_00b479ab5ed0226e72eebb2ae757ee5a.bindTooltip(
+                `<div>
+                     Montmartre View
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_261de12cbfb776ff4e34fd057bc7ea2d = L.circleMarker(
+                [48.8564, 2.3404],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_9a3314c85d519069aa3491158a161a81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf35dd60a69262c60a1fd51518922b7e = $(`<div id="html_cf35dd60a69262c60a1fd51518922b7e" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Square du Vert-Galant View</b><br>Beautiful views from Square du Vert-Galant<br><a href='https://en.wikipedia.org/wiki/Square_du_Vert-Galant' target='_blank'>More info</a></div></div>`)[0];
+                popup_9a3314c85d519069aa3491158a161a81.setContent(html_cf35dd60a69262c60a1fd51518922b7e);
+            
+        
+
+        circle_marker_261de12cbfb776ff4e34fd057bc7ea2d.bindPopup(popup_9a3314c85d519069aa3491158a161a81)
+        ;
+
+        
+    
+    
+            circle_marker_261de12cbfb776ff4e34fd057bc7ea2d.bindTooltip(
+                `<div>
+                     Square du Vert-Galant View
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8dfcece13286710ecbffd98dbaaff2b0 = L.circleMarker(
+                [48.8566, 2.3401],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_a8006cb1a5aa05f1cbf137f45a174aec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1ee940bc6b5b11bde8b4798937cd7ff = $(`<div id="html_b1ee940bc6b5b11bde8b4798937cd7ff" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Place Dauphine</b><br>Picturesque square on Île de la Cité<br><a href='https://en.wikipedia.org/wiki/Place_Dauphine' target='_blank'>More info</a></div></div>`)[0];
+                popup_a8006cb1a5aa05f1cbf137f45a174aec.setContent(html_b1ee940bc6b5b11bde8b4798937cd7ff);
+            
+        
+
+        circle_marker_8dfcece13286710ecbffd98dbaaff2b0.bindPopup(popup_a8006cb1a5aa05f1cbf137f45a174aec)
+        ;
+
+        
+    
+    
+            circle_marker_8dfcece13286710ecbffd98dbaaff2b0.bindTooltip(
+                `<div>
+                     Place Dauphine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_692a6e224534dbf4330013f043237517 = L.circleMarker(
+                [48.8486, 2.3245],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_c8ca5de613cf16af4298c529c19251f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdcb7145573b29f6f7efc7f15fd629ef = $(`<div id="html_cdcb7145573b29f6f7efc7f15fd629ef" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Le Bon Marché</b><br>Famous department store.<br><a href='https://www.lebonmarche.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_c8ca5de613cf16af4298c529c19251f7.setContent(html_cdcb7145573b29f6f7efc7f15fd629ef);
+            
+        
+
+        circle_marker_692a6e224534dbf4330013f043237517.bindPopup(popup_c8ca5de613cf16af4298c529c19251f7)
+        ;
+
+        
+    
+    
+            circle_marker_692a6e224534dbf4330013f043237517.bindTooltip(
+                `<div>
+                     Le Bon Marché
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_807455198e8e9e187e6c48d76e3ee2ea = L.circleMarker(
+                [48.872, 2.332],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_d1577d5e9a9c2548a87c3f90067a7737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0671ded20fe014d9a8a2efc1a7182472 = $(`<div id="html_0671ded20fe014d9a8a2efc1a7182472" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Galeries Lafayette</b><br>Upscale department store.<br><a href='https://www.galerieslafayette.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_d1577d5e9a9c2548a87c3f90067a7737.setContent(html_0671ded20fe014d9a8a2efc1a7182472);
+            
+        
+
+        circle_marker_807455198e8e9e187e6c48d76e3ee2ea.bindPopup(popup_d1577d5e9a9c2548a87c3f90067a7737)
+        ;
+
+        
+    
+    
+            circle_marker_807455198e8e9e187e6c48d76e3ee2ea.bindTooltip(
+                `<div>
+                     Galeries Lafayette
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8131aadbab73c61dda50862744500a4d = L.circleMarker(
+                [48.8724, 2.3285],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_c8b0c818dc899c14e80b4d41edc001d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e85673118c2a2fd40cc62fcbe99b40 = $(`<div id="html_f3e85673118c2a2fd40cc62fcbe99b40" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Printemps</b><br>Luxury department store.<br><a href='https://www.printemps.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_c8b0c818dc899c14e80b4d41edc001d5.setContent(html_f3e85673118c2a2fd40cc62fcbe99b40);
+            
+        
+
+        circle_marker_8131aadbab73c61dda50862744500a4d.bindPopup(popup_c8b0c818dc899c14e80b4d41edc001d5)
+        ;
+
+        
+    
+    
+            circle_marker_8131aadbab73c61dda50862744500a4d.bindTooltip(
+                `<div>
+                     Printemps
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84602e86cd6e1f2cdf2d96165117e080 = L.circleMarker(
+                [48.8603, 2.3376],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_a174d6bed9e4fa3dafa90c7f98ab8034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65083cadb1cfd1073a328c328a9fe1f7 = $(`<div id="html_65083cadb1cfd1073a328c328a9fe1f7" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Rue de Rivoli</b><br>Shopping street with various stores.<br><a href='https://en.parisinfo.com/shopping/73255/Rue-de-Rivoli' target='_blank'>More info</a></div></div>`)[0];
+                popup_a174d6bed9e4fa3dafa90c7f98ab8034.setContent(html_65083cadb1cfd1073a328c328a9fe1f7);
+            
+        
+
+        circle_marker_84602e86cd6e1f2cdf2d96165117e080.bindPopup(popup_a174d6bed9e4fa3dafa90c7f98ab8034)
+        ;
+
+        
+    
+    
+            circle_marker_84602e86cd6e1f2cdf2d96165117e080.bindTooltip(
+                `<div>
+                     Rue de Rivoli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a64ddc38ca6b73b9625f076e14a0f61a = L.circleMarker(
+                [48.8698, 2.3076],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_e59e9b61f6733b4698c3eb395baf7db5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361d8435274a21bb56239c2f0358e218 = $(`<div id="html_361d8435274a21bb56239c2f0358e218" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Champs-Élysées</b><br>One of the most famous avenues in the world, known for its theatres, cafés, and luxury shops.<br><a href='https://www.champselysees-paris.com/' target='_blank'>More info</a></div></div>`)[0];
+                popup_e59e9b61f6733b4698c3eb395baf7db5.setContent(html_361d8435274a21bb56239c2f0358e218);
+            
+        
+
+        circle_marker_a64ddc38ca6b73b9625f076e14a0f61a.bindPopup(popup_e59e9b61f6733b4698c3eb395baf7db5)
+        ;
+
+        
+    
+    
+            circle_marker_a64ddc38ca6b73b9625f076e14a0f61a.bindTooltip(
+                `<div>
+                     Champs-Élysées
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_649f7393878352a4adbd4389afeb09da = L.circleMarker(
+                [48.851, 2.3334],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_96118e0a33b01eb0bc19a77c3b6de980 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef51303baedc82ce511b13123a2b37c8 = $(`<div id="html_ef51303baedc82ce511b13123a2b37c8" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Boulevard Saint-Germain</b><br>A major street in Paris known for its high-end boutiques and cafés.<br><a href='https://en.wikipedia.org/wiki/Boulevard_Saint-Germain' target='_blank'>More info</a></div></div>`)[0];
+                popup_96118e0a33b01eb0bc19a77c3b6de980.setContent(html_ef51303baedc82ce511b13123a2b37c8);
+            
+        
+
+        circle_marker_649f7393878352a4adbd4389afeb09da.bindPopup(popup_96118e0a33b01eb0bc19a77c3b6de980)
+        ;
+
+        
+    
+    
+            circle_marker_649f7393878352a4adbd4389afeb09da.bindTooltip(
+                `<div>
+                     Boulevard Saint-Germain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66cf109565161cb81bf866b69a323bac = L.circleMarker(
+                [48.8668, 2.3072],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_f4ee0e6047a850d55f147ad9ed24d00f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9db6a675851ca6f88e378b595e09afe4 = $(`<div id="html_9db6a675851ca6f88e378b595e09afe4" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Avenue Montaigne</b><br>A famous street in Paris known for its luxury fashion stores.<br><a href='https://en.wikipedia.org/wiki/Avenue_Montaigne' target='_blank'>More info</a></div></div>`)[0];
+                popup_f4ee0e6047a850d55f147ad9ed24d00f.setContent(html_9db6a675851ca6f88e378b595e09afe4);
+            
+        
+
+        circle_marker_66cf109565161cb81bf866b69a323bac.bindPopup(popup_f4ee0e6047a850d55f147ad9ed24d00f)
+        ;
+
+        
+    
+    
+            circle_marker_66cf109565161cb81bf866b69a323bac.bindTooltip(
+                `<div>
+                     Avenue Montaigne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1708555cd40f3308ca72ffad8246037d = L.circleMarker(
+                [48.8573, 2.362],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_34ddd09fecc125775d63a6223c60855c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ce1100c6952c4cee61127502ad779b = $(`<div id="html_28ce1100c6952c4cee61127502ad779b" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Le Marais</b><br>Historic district with trendy boutiques.<br><a href='https://en.parisinfo.com/discovering-paris/walks-in-paris/itinerary/le-marais' target='_blank'>More info</a></div></div>`)[0];
+                popup_34ddd09fecc125775d63a6223c60855c.setContent(html_28ce1100c6952c4cee61127502ad779b);
+            
+        
+
+        circle_marker_1708555cd40f3308ca72ffad8246037d.bindPopup(popup_34ddd09fecc125775d63a6223c60855c)
+        ;
+
+        
+    
+    
+            circle_marker_1708555cd40f3308ca72ffad8246037d.bindTooltip(
+                `<div>
+                     Le Marais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e0da29e358f50ee83aed3cfecf0c6e0 = L.circleMarker(
+                [48.8662, 2.3283],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bbcd0bb83de022d2af52fc76dfb7ffe4);
+        
+    
+        var popup_377e4d0a7e8e2a11da70b53e37836917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6253927a4abc78a7d67a7fe3d1b662e9 = $(`<div id="html_6253927a4abc78a7d67a7fe3d1b662e9" style="width: 100.0%; height: 100.0%;"><div style='width: 150px;'><b>Saint-Honoré</b><br>Street known for high-end shopping.<br><a href='https://en.wikipedia.org/wiki/Rue_Saint-Honor%C3%A9' target='_blank'>More info</a></div></div>`)[0];
+                popup_377e4d0a7e8e2a11da70b53e37836917.setContent(html_6253927a4abc78a7d67a7fe3d1b662e9);
+            
+        
+
+        circle_marker_9e0da29e358f50ee83aed3cfecf0c6e0.bindPopup(popup_377e4d0a7e8e2a11da70b53e37836917)
+        ;
+
+        
+    
+    
+            circle_marker_9e0da29e358f50ee83aed3cfecf0c6e0.bindTooltip(
+                `<div>
+                     Saint-Honoré
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
